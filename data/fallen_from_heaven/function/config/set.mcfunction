@@ -1,0 +1,1 @@
+$data modify storage fallen_from_heaven:data config set value {end_use_spawn: $(end_use_spawn)b, end_skyblock_mode: $(end_skyblock_mode)b, overworld_skyblock_mode: $(overworld_skyblock_mode)b, nether_skyblock_mode: $(nether_skyblock_mode)b}
