@@ -1,0 +1,28 @@
+{
+  "criteria": {
+    "below_y": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "location": {
+            "position": {
+              "y": {
+                "max": -32
+              }
+            },
+            "dimension": "minecraft:the_end"
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "below_y"
+    ]
+  ],
+  "rewards": {
+    "function": "fallen_from_heaven:init_end2overworld"
+  },
+  "sends_telemetry_event": false
+}

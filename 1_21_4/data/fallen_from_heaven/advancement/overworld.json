@@ -1,0 +1,28 @@
+{
+  "criteria": {
+    "below_y": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "location": {
+            "position": {
+              "y": {
+                "max": -86
+              }
+            },
+            "dimension": "minecraft:overworld"
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "below_y"
+    ]
+  ],
+  "rewards": {
+    "function": "fallen_from_heaven:init_overworld2nether"
+  },
+  "sends_telemetry_event": false
+}
