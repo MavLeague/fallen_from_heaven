@@ -2,7 +2,7 @@
     "pack": {
         "description": "This simple Pack stops you from dying in the Void. \nInstead you'll be teleported into the Dimension beneath!",
         "pack_format": 71,
-        "supported_formats": { "min_inclusive": 48, "max_inclusive": 71 }
+        "supported_formats": { "min_inclusive": 48, "max_inclusive": 81 }
     },
     "overlays": {
       "entries": [
