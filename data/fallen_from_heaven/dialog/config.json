@@ -1,0 +1,94 @@
+{
+  "type": "minecraft:confirmation",
+  "title": {
+    "text": "Fallen From Heaven - Configuration"
+  },
+  "inputs": [
+    {
+      "type": "minecraft:boolean",
+      "key": "end_use_spawn",
+      "initial": false,
+      "label": {
+        "text": "Keep coordinates (the End)",
+        "hover_event": {
+          "action": "show_text",
+          "value": {
+            "text": "Uses the Worldspawn when falling into the Void of the End Dimension. If disabled, the coordinates will stay the same."
+          }
+        }
+      },
+      "on_true": "false",
+      "on_false": "true"
+    },
+    {
+      "type": "minecraft:boolean",
+      "key": "end_skyblock_mode",
+      "initial": false,
+      "label": {
+        "text": "Skyblock Mode: ",
+        "extra": [
+          {
+            "text": "the End",
+            "italic": true
+          }
+        ],
+        "hover_event": {
+          "action": "show_text",
+          "value": {
+            "text": "When falling into the Void, you'll come down far in the sky in the same dimension."
+          }
+        }
+      }
+    },
+    {
+      "type": "minecraft:boolean",
+      "key": "overworld_skyblock_mode",
+      "initial": false,
+      "label": {
+        "text": "Skyblock Mode: ",
+        "extra": [
+          {
+            "text": "Overworld",
+            "italic": true
+          }
+        ],
+        "hover_event": {
+          "action": "show_text",
+          "value": {
+            "text": "When falling into the Void, you'll come down far in the sky in the same dimension."
+          }
+        }
+      }
+    },
+    {
+      "type": "minecraft:boolean",
+      "key": "nether_skyblock_mode",
+      "initial": false,
+      "label": {
+        "text": "Skyblock Mode: ",
+        "extra": [
+          {
+            "text": "the Nether",
+            "italic": true
+          }
+        ],
+        "hover_event": {
+          "action": "show_text",
+          "value": {
+            "text": "When falling into the Void, you'll come down far in the sky in the same dimension."
+          }
+        }
+      }
+    }
+  ],
+  "no": {
+    "label": "Cancel"
+  },
+  "yes": {
+    "label": "Done",
+    "action": {
+      "type": "minecraft:dynamic/run_command",
+      "template": "data modify storage fallen_from_heaven:data config set value {end_use_spawn: $(end_use_spawn), end_skyblock_mode: $(end_skyblock_mode), overworld_skyblock_mode: $(overworld_skyblock_mode), nether_skyblock_mode: $(nether_skyblock_mode)}"
+    }
+  }
+}
